@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tng-M5-Wnl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMD-58-MRA">
+                                <rect key="frame" x="160" y="428" width="94" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="clx-E8-OEu" kind="show" id="Gte-qs-yCk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pMD-58-MRA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IkF-lV-i3w"/>
+                            <constraint firstItem="pMD-58-MRA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YVT-Va-2fn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fjg-1A-GsM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="lKd-ba-RQ8">
+            <objects>
+                <viewController id="clx-E8-OEu" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iff-Nc-U9H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-i2-WpR">
+                                <rect key="frame" x="50" y="188" width="76" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Amarillo">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changecolors:" destination="clx-E8-OEu" eventType="touchUpInside" id="2Ey-Y2-6BH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzM-99-Dym">
+                                <rect key="frame" x="50" y="274" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Azul">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0e-03-pT4">
+                                <rect key="frame" x="50" y="360" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Rosa">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-eW-MvQ">
+                                <rect key="frame" x="50" y="446" width="56" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Verde">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIB-LW-QQy">
+                                <rect key="frame" x="50" y="532" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Rojo">
+                                    <color key="titleColor" red="1" green="0.095757209964462464" blue="0.1741991288370508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-Hp-maS">
+                                <rect key="frame" x="49" y="618" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Naranja">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Kr-i2-WpR" firstAttribute="top" secondItem="F9g-vp-34H" secondAttribute="top" constant="100" id="53k-43-cj9"/>
+                            <constraint firstItem="dzM-99-Dym" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="50" id="5db-Rc-9qV"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="dzM-99-Dym" secondAttribute="trailing" constant="318" id="7Qd-1m-xXp"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="6Kr-i2-WpR" secondAttribute="trailing" constant="288" id="8jB-Cf-wEY"/>
+                            <constraint firstItem="8h9-Hp-maS" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="49" id="E5c-Vd-ok4"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="kIB-LW-QQy" secondAttribute="trailing" constant="318" id="HNV-eA-TvX"/>
+                            <constraint firstItem="q0e-03-pT4" firstAttribute="top" secondItem="dzM-99-Dym" secondAttribute="bottom" constant="50" id="KrB-VC-Mt7"/>
+                            <constraint firstItem="KIN-eW-MvQ" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="50" id="Whf-LN-xp4"/>
+                            <constraint firstItem="dzM-99-Dym" firstAttribute="top" secondItem="6Kr-i2-WpR" secondAttribute="bottom" constant="50" id="XPR-gx-gao"/>
+                            <constraint firstItem="KIN-eW-MvQ" firstAttribute="top" secondItem="q0e-03-pT4" secondAttribute="bottom" constant="50" id="Z8Q-Av-MoD"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="8h9-Hp-maS" secondAttribute="trailing" constant="288" id="aOn-Sr-lcf"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="KIN-eW-MvQ" secondAttribute="trailing" constant="308" id="biH-89-31o"/>
+                            <constraint firstItem="q0e-03-pT4" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="50" id="cXQ-IE-21M"/>
+                            <constraint firstItem="F9g-vp-34H" firstAttribute="trailing" secondItem="q0e-03-pT4" secondAttribute="trailing" constant="318" id="kHs-mi-g55"/>
+                            <constraint firstItem="6Kr-i2-WpR" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="50" id="lTb-S9-wjI"/>
+                            <constraint firstItem="kIB-LW-QQy" firstAttribute="top" secondItem="KIN-eW-MvQ" secondAttribute="bottom" constant="50" id="lyB-WG-gYY"/>
+                            <constraint firstItem="kIB-LW-QQy" firstAttribute="leading" secondItem="F9g-vp-34H" secondAttribute="leading" constant="50" id="qK4-tw-ix0"/>
+                            <constraint firstItem="8h9-Hp-maS" firstAttribute="top" secondItem="kIB-LW-QQy" secondAttribute="bottom" constant="50" id="wPr-Eh-BCA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F9g-vp-34H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cl5-lx-hOf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYT-KD-bei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JMa-cD-REK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tng-M5-Wnl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aos-Qj-8rK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tbe-vr-NyD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkN-Bs-49l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
